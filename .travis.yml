@@ -12,3 +12,8 @@ before_script:
 script:
   - node_modules/.bin/karma start karma.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox
   - node_modules/.bin/protractor e2e-tests/protractor.conf.js --browser=firefox
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "66bd7a2e-9297-4179-bf9c-0b8872050a7c"
